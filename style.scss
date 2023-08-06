@@ -1,0 +1,424 @@
+// Common Style Start
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    outline: 0;
+    font-family: 'Heebo', sans-serif;
+}
+// Common Style End   
+
+
+//  Navigation Area Start
+.nav{
+    margin-top: 20px;
+    &__logo{
+        display: flex;
+        flex-direction: row;
+    }
+    .nav__manu--link-item{
+        color: #fff;
+        background-color: #3E54A3;
+        height: 10px;
+        width: 30px;
+        border-radius: 5px;
+        padding: 0 5px;
+        margin-left: 6px;
+    }
+    .nav__manu--link .icon-img img::before {
+       
+            border-radius: 50%;
+            box-shadow: rgba(0, 0, 0, 0.2) -1px 1px 3px inset;
+            content: "";
+            height: 100%;
+            left: 0px;
+            position: absolute;
+            top: 0px;
+            width: 100%;
+        
+    }
+    &__manu--list{
+        display: flex;
+        gap: 30px;
+        .nav__manu--link{
+            text-decoration: none;
+            color: black;
+            font-weight: 700;
+        }
+   
+    }
+    .nav__manu--link{
+        height: 20px;
+        width: 20px;
+    }
+    .icon__image-nav{
+        position: relative;
+        background-color: black;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    .icon__image-nav::before{
+        position: absolute;
+        content: "";
+        background-image: url(./images/icon-arrow.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+    }
+}
+//  Navigation Area End
+
+
+// Challenge  Area Start
+.challenge__area{
+        background-color: #fff;
+        position: sticky;
+        top: 0px;
+        border-top: 1px solid rgb(115, 115, 115, .3);
+        border-bottom: 1px solid rgb(115, 115, 115, .3);
+    .challenge{
+        border-left: 1px solid rgb(115, 115, 115, .3);
+        border-right: 1px solid rgb(115, 115, 115, .3);
+        width: 120px;
+        margin-left: 10px;
+        
+        p{
+                display: inline-block;
+                font-weight: bold;
+                margin-top: 12px;
+                margin-left: 10px;
+        }
+    }
+}
+// Challenge  Area End
+
+
+// Hero Area Start
+.hero-area{
+    border: 1px solid #DBE5E6;
+    border-radius: 30px;
+    margin-top: 50px;
+}
+.hero{
+    height: 400px;
+    margin-top: 60px;
+    .hero__top{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__icon{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        padding: 10px;
+        font-weight: 700;
+        &--one{
+            color: #3E54A3;
+            background-color:#E7EBF9;
+            border-radius: 10px;
+            padding: 5px 10px;
+        }
+        &--two{
+            color: #6ABECD;
+        }
+        &--three{
+            color: #3E59AC;
+        }
+        &--four{
+            color: #CF6390;
+        }
+
+        &--sp{
+            display: flex;
+            flex-direction: row;
+            border: 1px solid rgb(241, 182, 4);;
+            .icon__num{
+                color: #fff;
+                background-color:rgb(241, 182, 4);
+                padding: 0rem 0.75rem;
+            }
+            .icon__text{
+                color: rgb(241, 182, 4);
+                background-color: #fff;
+                padding: 0rem 0.75rem;
+            }
+        }
+    }
+    &__notice{
+        padding: 50px 20px;
+    }
+    &__text{
+        &--head{
+            padding: 10px;
+            h1{
+                font-weight: 600;
+            }
+        }
+        &--info{
+            padding: 10px;
+            font-size: 20px;
+        }
+        &--button{
+            padding: 10px;
+        }
+        &--btn{
+            font-size: 16px;
+            border: 0px;
+            border-radius: 30px;
+            padding: 15px;
+            background-color: rgb(62, 84, 163);
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+            font-style: italic;
+            font-weight: 700;
+            text-align: center;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+    }
+    .hero__image--btn{
+        margin-top: 30px;
+        margin-left: 90px;
+        a{
+            text-decoration: none;
+            background-color: #c1c8c9;
+            color: rgb(115, 115, 115);
+            padding: 5px 15px;
+            border-radius: 30px;
+            font-size: 25px;
+            font-weight: bolder;
+        }
+        a:hover{
+            background-color: #98adaf;
+        }
+        a:active{
+            background-color: #3E54A3;
+            color: #fff;
+        }
+    }
+}
+// Hero Area End
+
+
+// Info Area Start
+.info-area{
+    margin-top: 200px;
+}
+.info{
+    h2{
+        font-size: 44px;
+        font-weight: 600;
+    }
+    p{
+        font-size: 20px;
+    }
+    &__main--details--list{
+        li{
+            list-style-type: disc;
+        }
+    }
+    &__main{
+        padding: 50px;
+        border: 1px solid #DBE5E6;
+        border-radius: 30px;
+    }
+
+    &__sub{
+        padding-left: 50px;
+        &--list-one{
+            padding: 50px;
+            border: 1px solid #DBE5E6;
+            border-radius: 30px;
+        }
+        &--list-two{
+            padding: 50px;
+            border: 1px solid #DBE5E6;
+            margin-top: 50px;
+            border-radius: 30px;
+        }
+    }
+}
+// Info Area End
+
+
+// FAQ Area Start
+.faq{
+    margin-top: 100px;
+    margin-left: 300px;
+    &__head{
+        h3{
+            text-align: center;
+            margin-bottom: 50px;
+        }
+    }
+    .accordion {
+        background-color: #eee;
+        color: #444;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 20px;
+        font-weight: 600;
+        transition: 0.4s;
+      }
+      
+      .active, .accordion:hover {
+        background-color: #ccc;
+      }
+      
+      .accordion:after {
+        content: '\002B';
+        color: #777;
+        font-weight: bold;
+        float: right;
+        margin-left: 5px;
+      }
+      
+      .active:after {
+        content: "\2212";
+      }
+      
+      .panel {
+        padding: 0 18px;
+        background-color: white;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        margin-top: 25px;
+      }
+
+}
+// FAQ Arae End 
+
+
+// Discord Area Start
+.discord-area{
+    background-color: #3E54A3;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    
+}
+.discord-area::before {
+    background-image: url(./images/discord-img.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    content: "";
+    height: 80rem;
+    width: 80rem;
+    bottom: -26rem;
+    right: -22rem;
+}
+.discord{
+    color: #fff;
+    height: 500px;
+    text-align: center;
+    padding: 50px;
+
+    p{
+        font-size: 28px;
+        padding: 15px;
+    }
+    .disord__head{
+        padding-bottom: 30px;
+    }
+    
+}
+.discord__button {
+    padding-top: 50px;
+    a{
+        text-decoration: none;
+        color: #3E54A3;
+        background-color: #fff;
+        padding: 15px 25px;
+        border-radius: 30px;
+        font-weight: 700;
+    }
+}
+// Discord Area End
+
+
+// Footer Area Start
+.footer{
+    margin-top: 200px;
+
+    &__top{
+        &--icons{
+                margin-left: 1000px;
+                margin-top: -32px;
+        }
+        i{
+            font-size: 30px;
+            margin-left: 20px;
+        }
+    }
+
+    &__main{
+        &--btn{
+            background-color: #bb3a4d;
+            color: #fff;
+            padding: 10px 20px;
+            border: 0;
+            border-radius: 30px;
+            margin-left: 20px;
+
+            &:hover{
+                background-color: #BC102A;
+            }
+        }
+        &--left {
+            h2{
+                color: #3E54A3;
+                padding: 10px;
+            }
+        }
+        &--email{
+            height: 40px;
+            width: 200px;
+            border: 1px solid #DBE5E6;
+        }
+        margin-top: 50px;
+
+        li{
+            h5{
+                color: black;
+                font-weight: bolder;
+            }
+            color: rgb(115, 115, 115);
+            padding: 5px;
+        }
+    }
+    
+    
+    .footer__bottom--right ul {
+        display: flex;
+        padding-left: 250px;
+        a{
+            color: rgb(115, 115, 115, .9);
+            text-decoration: none;
+            padding-left: 20px;
+        }
+    }
+    .footer__bottom{
+        margin-top: 100px;
+        border-top: 1px solid rgb(115, 115, 115, .5);
+        color: rgb(115, 115, 115, .9);
+        &--right ul{
+            display: flex;
+        }
+    }
+}
+// Footer Area End 
+
+
+
